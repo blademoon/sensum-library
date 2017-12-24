@@ -1,5 +1,5 @@
-﻿#ifndef SENSUS_SI7021_H_INCLUDED
-#define SENSUS_SI7021_H_INCLUDED
+﻿#ifndef SENSUM_SI7021_H_INCLUDED
+#define SENSUM_SI7021_H_INCLUDED
 
 // Объявления функций библиотеки Sensus sensor.
 int read_si7021(float &humidity, float &temperature); 											// Функция получения данных с сенсора SI7021
@@ -13,6 +13,6 @@ int read_si7021(float &humidity, float &temperature); 											// Функци
 #define FUNC_ERR_ACQ_I2C_BUS			-301		// Ошибка! Не удаётся получить доступ к шине I2C или взаимодействовать с сенсором. ERROR! Failed to acquire bus access and / or talk to slave sensor.
 
 // Подключае файл с определениями функций.
-#include <sensus/si7021.cpp>
+#include <sensum/si7021.cpp>
 
-#endif // SENSUS_SI7021_H_INCLUDED
+#endif // SENSUM_SI7021_H_INCLUDED

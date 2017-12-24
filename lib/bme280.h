@@ -1,5 +1,5 @@
-﻿#ifndef SENSUS_BME280_H_INCLUDED
-#define SENSUS_BME280_H_INCLUDED
+﻿#ifndef SENSUM_BME280_H_INCLUDED
+#define SENSUM_BME280_H_INCLUDED
 
 // Объявления функций библиотеки Sensus sensor.
 int	read_bme280(float &humidity, float &temperature, float &pressure);											// Функция получения данных с сенсора BME280
@@ -10,6 +10,6 @@ int	read_bme280(float &humidity, float &temperature, float &pressure);										
 #define FUNC_ERR_ACQ_I2C_BUS			-301		// Ошибка! Не удаётся получить доступ к шине I2C или взаимодействовать с сенсором. ERROR! Failed to acquire bus access and / or talk to slave sensor.
 
 // Подключае файл с определениями функций.
-#include <sensus/bme280.cpp>
+#include <sensum/bme280.cpp>
 
-#endif // SENSUS_BME280_H_INCLUDED
+#endif // SENSUM_BME280_H_INCLUDED

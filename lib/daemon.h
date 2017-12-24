@@ -1,5 +1,5 @@
-﻿#ifndef SENSUS_DAEMON_H
-#define SENSUS_DAEMON_H
+﻿#ifndef SENSUM_DAEMON_H
+#define SENSUM_DAEMON_H
 
 // Определяем необходимые константы для компилятора
 #define _XOPEN_SOURCE 700													// Tell your compiler to include definitions for some extra functions that are defined in X/Open 7, incorporating POSIX 2008
@@ -22,6 +22,6 @@ int resrote_sighup_signal (void);											// Функция для восст�
 #define	FUNCTION_SUCCESS    1		                                    	// Функция выполнена успешно. The function completed successfully.
 
 // Подключаем файл с определениями функций библиотеки.
-#include <sensus/daemon.cpp>
+#include <sensum/daemon.cpp>
 
-#endif
+#endif  //  SENSUM_DAEMON_H

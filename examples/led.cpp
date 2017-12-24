@@ -1,5 +1,5 @@
 ﻿#include <iostream>
-#include <sensus/fs_gpio.h>
+#include <sensum/fs_gpio.h>
 
 using namespace std;
 

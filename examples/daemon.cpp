@@ -1,7 +1,7 @@
 ﻿#include <iostream>
-#include <sensus/bme280.h>
-#include <sensus/additional.h>
-#include <sensus/daemon.h>
+#include <sensum/bme280.h>
+#include <sensum/additional.h>
+#include <sensum/daemon.h>
 #include <syslog.h>
 
 using namespace std;

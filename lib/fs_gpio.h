@@ -1,5 +1,5 @@
-﻿#ifndef SENSUS_FS_GPIO_H
-#define SENSUS_FS_GPIO_H
+﻿#ifndef SENSUM_FS_GPIO_H
+#define SENSUM_FS_GPIO_H
 
 // Объявление функций библиотеки Sensus GPIO.
 int calculate_pin_number(int pin_number);
@@ -60,6 +60,6 @@ int set_active_low_state(int pin_number, int active_low_state);
 #define FUNC_ERR_UNK_ACTIVE_LOW_SENT	-55			// Ошибка! В функцию gpio_set_active_low_state переданно некоректное значение режима работы пина. ERROR! An incorrect value of the pin operation mode was passed to function "gpio_set_active_low_state".
 
 // Подключаем файл с определениями функций.
-#include <sensus/fs_gpio.cpp>
+#include <sensum/fs_gpio.cpp>
 
-#endif /* END OF DECLARATIONS SENSUS_FS_GPIO_H */
+#endif  // SENSUM_FS_GPIO_H

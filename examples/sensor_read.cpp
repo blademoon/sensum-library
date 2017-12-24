@@ -1,8 +1,8 @@
 ﻿#include <iostream>
-#include <sensus/bme280.h>
-#include <sensus/tsl2561.h>
-#include <sensus/tcs34725.h>
-#include <sensus/si7021.h>
+#include <sensum/bme280.h>
+#include <sensum/tsl2561.h>
+#include <sensum/tcs34725.h>
+#include <sensum/si7021.h>
 
 
 using namespace std;

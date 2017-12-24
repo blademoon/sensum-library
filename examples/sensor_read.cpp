@@ -40,7 +40,7 @@ int main () {
 
 
     // Переменные для хранения значений цвета  считываемых с датчика цвета TCS34725
-    int red = 0, green = 0, blue = 0, clear = 0, ir = 0
+    int red = 0, green = 0, blue = 0, clear = 0, ir = 0;
 
     //Считываем данные с сенсора TCS34725
     if ((read_tcs34725(red,green,blue,clear,ir)) != 1)  {

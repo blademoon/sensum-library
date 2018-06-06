@@ -7,7 +7,7 @@
 int cur_time(int &current_hour,int &current_minute, int &current_second, int &current_week_day);		
 
 // Функция получения текущей даты в корректном для MySQL формате.
-int cur_date(std::string &current_day, std::string &current_month, std::string &current_year); 
+int cur_date(std::string & current_day, std::string & current_month, std::string & current_year); 
 
 //  Значения возвращаемые функциями
 #define	FUNCTION_SUCCESS    1                                                   // Функция выполнена успешно. The function completed successfully.

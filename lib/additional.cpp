@@ -2,11 +2,12 @@
 #include <string>
 
 // Функция возвращяющая текущй час, текущую минуту, текущий день недели (0 - воскресенье, 1 - понедельник и т.д. ).
-int cur_time(int &current_hour,int &current_minute,int &current_week_day) {
+int cur_time(int &current_hour,int &current_minute, int &current_second, int &current_week_day) {
         time_t now = time(0);
         tm *ltm = localtime(&now);
 	current_hour = ltm->tm_hour;
 	current_minute = ltm->tm_min;
+	current_second = ltm->tm_sec;
 	current_week_day = ltm->tm_wday;
         return FUNCTION_SUCCESS;
 }
@@ -15,9 +16,9 @@ int cur_time(int &current_hour,int &current_minute,int &current_week_day) {
 int cur_date(string &current_day,string &current_month,string &current_year) {
         time_t now = time(0);
         tm *ltm = localtime(&now);
-		int day = ltm->tm_mday;
-		int month = ltm->tm_mon;
-		int year = ltm->tm_year;
+	int day = ltm->tm_mday;
+	int month = ltm->tm_mon;
+	int year = ltm->tm_year;
 
         //Преобразуем день
         if (day < 10) {

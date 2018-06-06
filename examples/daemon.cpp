@@ -16,7 +16,7 @@ int main () {
 	const	char *daemon_name = "TEST-DAEMON";
 
 	// Переменные для хранения текущего дня недели, часа и минуты.
-	int day_of_week = 0, cur_hour = 0, cur_minute = 0;
+	int day_of_week = 0, cur_hour = 0, cur_minute = 0, cur_second = 0;
 
 	// Переходим в состояние демона UNIX
 	daemonize(daemon_name);
@@ -39,7 +39,7 @@ int main () {
 	for ( ; ; ) {
 
 		// получаем текущее время (час и минуту) и день недели.
-		cur_time(cur_hour,cur_minute,day_of_week);
+		cur_time(cur_hour,cur_minute,cur_second,day_of_week);
 
 		// Передаём в журнал информацию о текущем уровне освещения, влажности, давления, температуре 1 раз в 15 минут.
 		if ((cur_minute % 15) == 0) {

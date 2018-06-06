@@ -46,7 +46,7 @@ int main () {
 
 			// Передаём текущие значения освещения, давления, температуры, влажности.
 			read_bme280(humidity,temperature,pressure);
-			syslog(LOG_NOTICE,"Current pressure: %.2f (hPa), temperature: %.2f (C), humidity: %.2f (%).", pressure,temperature,humidity);
+			syslog(LOG_NOTICE,"Current pressure: %.2f (hPa), temperature: %.2f (C), humidity: %.2f (%%).", pressure,temperature,humidity);
 
 
 			// Засыпаем на 1 минуту, чтобы гарантированно передать в лог только одну запись текущих параметрах среды.

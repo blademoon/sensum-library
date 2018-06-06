@@ -13,7 +13,7 @@ int cur_time(int &current_hour,int &current_minute, int &current_second, int &cu
 }
 
 // Функция возвращяющая текущую дату (день, месяц, число) в виде чисел в строковые переменные.
-int cur_date(string &current_day,string &current_month,string &current_year) {
+int cur_date(std::string &current_day,std::string &current_month,std::string &current_year) {
         time_t now = time(0);
         tm *ltm = localtime(&now);
 	int day = ltm->tm_mday;
